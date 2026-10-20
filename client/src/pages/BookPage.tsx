@@ -6,6 +6,7 @@ import SessionCard from '../components/SessionCard';
 import { config } from '../config';
 import { formatDay, groupByDay } from '../lib/format';
 import type { Session } from '../types';
+import { Link } from 'react-router-dom';
 
 export default function BookPage() {
     const [selected, setSelected] = useState<Session | null>(null);
@@ -65,6 +66,11 @@ export default function BookPage() {
             </div>
 
             {selected && <BookingModal session={selected} onClose={() => setSelected(null)} />}
+            <footer className="mt-16 text-center text-sm text-zinc-600">
+                <Link to="/trainer" className="hover:text-lime-400">
+                    Trainer? Manage sessions →
+                </Link>
+            </footer>
         </div>
     );
 }
