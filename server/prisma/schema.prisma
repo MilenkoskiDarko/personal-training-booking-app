@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum SessionType {
+  ASSESSMENT
+  TRAINING
+  ONLINE
+}
+
+enum Goal {
+  STRENGTH
+  WEIGHT_LOSS
+  MOBILITY
+  GENERAL
+}
+
+model Session {
+  id          String      @id @default(cuid())
+  startsAt    DateTime
+  durationMin Int
+  type        SessionType
+  createdAt   DateTime    @default(now())
+  booking     Booking?
+}
+
+model Booking {
+  id        String   @id @default(cuid())
+  sessionId String   @unique
+  session   Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  name      String
+  email     String
+  goal      Goal
+  note      String?
+  aiMessage String?
+  createdAt DateTime @default(now())
+}
