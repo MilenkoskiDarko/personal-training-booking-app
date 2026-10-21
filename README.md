@@ -3,8 +3,8 @@
 Booking app for personal trainer. The trainer publishes available sessions and clients book session with their name,mail and training goal. 
 After booking AI-generated confimirmation message is displayed using gemini api-key.
 
-#Live frontend -> https://personal-training-booking-app.vercel.app
-#Live backend -> https://personal-training-booking-app.onrender.com/sessions
+#### Live frontend -> https://personal-training-booking-app.vercel.app
+#### Live backend -> https://personal-training-booking-app.onrender.com/sessions
 
 ### Features
 
@@ -20,10 +20,10 @@ After booking AI-generated confimirmation message is displayed using gemini api-
 - Delete not reserved sessions
 
 ### Tech Stack
-Frontend -> React,TypeScript,Vite,Tailwind CSS,React Router; Hosting -> Vercel.
-Backend -> NestJS(TypeScript); Hosting-> Render
-Database -> PostgreSQL with Prisma 7; Hosting -> Neon
-AI -> Google Gemini API
+##### Frontend -> React,TypeScript,Vite,Tailwind CSS,React Router; Hosting -> Vercel.
+#####Backend -> NestJS(TypeScript); Hosting-> Render
+##### Database -> PostgreSQL with Prisma 7; Hosting -> Neon
+##### AI -> Google Gemini API
 
 ### Key factors
 - Double bookings are prevented by the database -> Booking.SessionId has unique constraint
