@@ -36,17 +36,17 @@ Re-theming this app for another business is mostly editing this file.
 Requierements: NodeJS 20 or newer nad PostgreSQL(Neon)
 
 #### 1. Backend
-cd server
+cd server <br>
 npm install
-cp .env.example .env      # then fill in the values
-npx prisma migrate deploy # creates the tables
-npx prisma generate       # generates the Prisma client
-npm run start:dev         # runs on http://localhost:3000
+cp .env.example .env      # then fill in the values <br>
+npx prisma migrate deploy # creates the tables <br>
+npx prisma generate       # generates the Prisma client <br>
+npm run start:dev         # runs on http://localhost:3000 <br>
 
 #### 2. Frontend
-cd client
-npm install
-npm run dev               # runs on http://localhost:5173
+cd client <br>
+npm install <br>
+npm run dev               # runs on http://localhost:5173 <br>
     
 ### AI Tools Used
 
