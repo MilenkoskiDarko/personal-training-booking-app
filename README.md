@@ -21,7 +21,7 @@ After booking AI-generated confimirmation message is displayed using gemini api-
 
 ### Tech Stack
 ##### Frontend -> React,TypeScript,Vite,Tailwind CSS,React Router; Hosting -> Vercel.
-#####Backend -> NestJS(TypeScript); Hosting-> Render
+##### Backend -> NestJS(TypeScript); Hosting-> Render
 ##### Database -> PostgreSQL with Prisma 7; Hosting -> Neon
 ##### AI -> Google Gemini API
 
