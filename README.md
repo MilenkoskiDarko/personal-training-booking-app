@@ -56,8 +56,8 @@ npm run dev               # runs on http://localhost:5173 <br>
 - Used for connecting to Neon,Vercel and Render as i came across them for the first time.
 - Debugging TypeScript and I had problems with Gemini's free key-api(outdated, slow responses).
 
-### Make.com
-#### Automated mail reminders
+#### 2. Make.com
+##### Automated mail reminders
 
 A Make.com scenario runs every morning at 07:00 and emails clients who have a session today or tomorrow.
 
