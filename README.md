@@ -55,6 +55,23 @@ npm run dev               # runs on http://localhost:5173 <br>
 - My previous backend experience was in Springboot so i used claude to quickly learn,adapt and understand the new technology.
 - Used for connecting to Neon,Vercel and Render as i came across them for the first time.
 - Debugging TypeScript and I had problems with Gemini's free key-api(outdated, slow responses).
+
+### Make.com
+#### Automated mail reminders
+
+A Make.com scenario runs every morning at 07:00 and emails clients who have a session today or tomorrow.
+
+<img width="1463" height="808" alt="image" src="https://github.com/user-attachments/assets/c9fc5d85-bdb6-45b2-ae92-0782f7274991" />
+
+1. **HTTP** calls the live API (`GET /sessions`)
+2. **Iterator** handles one session at a time
+3. **Router** splits them into two routes with filters: *today* and *tomorrow*
+4. **Google Gemini** writes a personal reminder based on the client's goal and note
+5. **Gmail** sends it to the client
+
+Blueprint: [Trainer Booking reminders.blueprint.json](https://github.com/user-attachments/files/34025345/Trainer.Booking.reminders.blueprint.json)
+
+
     
 ###  What would I improve with more time
 - First of all i would update the UI becouse it was build quickly to fit the 2-hour challange.
@@ -63,4 +80,5 @@ npm run dev               # runs on http://localhost:5173 <br>
 - Implement notifications for both trainer and client, reminders that they have session in 2 hours for example.
 - Implement cancel or reschedule.
 
-##### The time diffrence between the first commit and last production commit is ±2 hours.
+
+
